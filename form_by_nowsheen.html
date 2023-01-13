@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+<head>
+<title>Form By Nowsheen </title>
+<style>
+body {
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+		 #container::before {
+
+            background: url('jelmer-assink-gzeTjGu3b_k-unsplash.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+#container {
+            border: 2px solid black;
+            margin: 10px 215px;
+            border-radius: 15px;
+            width: 364px;
+            padding: 20px;            
+        }
+.container button {
+ display: block;
+ margin: 3px;
+ width: 350px ;
+ padding: 0px;
+ border-radius: 12px;
+ font-size: 20px;
+        }
+.formgroup input{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+ display: block;
+ width: 338px;
+ padding: 4px;
+ border-radius: 15px;
+ margin: 6px;
+ border: 2px solid black;
+
+        }
+.btn:hover {
+ background-color: rgb(104, 87, 87);
+  }
+  .btn {
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin: 0px 9px;
+            padding: 3px 4px;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+</style>
+</head>
+<body>
+<div id='container'>
+<h1>Register to Join </h1> 
+<form>
+<div class="formgroup">
+<label for="fname"> First Name:</label>
+<input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required>
+</div>
+<div class="formgroup">
+<label for="lname"> Last Name:</label>
+<input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required>
+</div>
+<div class="formgroup">
+<label for="age"> Age:</label>
+<input type="number" id="" name="lname" placeholder="Enter Your Age" required>
+</div>
+<div>
+<label for="gen"> Gender:</label>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+</div>
+<div class="formgroup">
+<p><label for="address"> Address:</label></p>
+<textarea id="address" rows='4' cols='40'>
+</textarea>
+</div>
+<div class="formgroup">
+<label for="district"> District:</label>
+<select id="district" name="district">
+<option>--Select--</option>
+<option>Anantnag</option>
+<option>Budgam</option>
+<option>Baramulla</option>
+<option>Ganderbal</option>
+<option>Shopian</option>
+<option>Srinagar</option>
+<option>Pattan</option>
+</select>
+</div>
+<div class="formgroup">
+<label for='phone'>Phone Number:</label>
+<input type='tel' id='phone' name='phone'>
+</div>
+<div class="formgroup">
+<label for='email'>Email:</label>
+<input type='email' id='email' name='email' required>
+</div>
+<div>
+<button type='submit' class='btn'>Submit </button>
+</div> 
+</form>
+</div>
+</body>
+</html>
